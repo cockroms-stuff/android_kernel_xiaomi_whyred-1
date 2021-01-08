@@ -14,7 +14,7 @@ campatch_flag=false
 anykernel_build=false
 SPAM_TELEGRAM=true
 
-if [ -z "$TELEGRAM_TOKEN" ] && [ -z "$TELEGRAM_CHAT" ] && [ -n "$SPAM_TELEGRAM"]; then
+if [ -z "$TELEGRAM_TOKEN" ] && [ -z "$TELEGRAM_CHAT" ] && [ -n "$SPAM_TELEGRAM" ]; then
 	echo "Please set TELEGRAM_TOKEN and TELEGRAM_CHAT variables"
 	exit 1
 fi
