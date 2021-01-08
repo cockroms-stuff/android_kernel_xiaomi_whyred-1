@@ -129,7 +129,7 @@ else
 			echo "Building with AnyKernel3..."
 			git clone https://github.com/cockroms-stuff/AnyKernel3 -b cxck-whyred
 			cd AnyKernel3
-			cp $ZIMG ./
+			cp ../$ZIMG ./
 			zip -r9 "../out/$ZIPNAME" * -x '*.git*' README.md *placeholder
 			cd .. && rm -rf AnyKernel3
 			[[ $SPAM_TELEGRAM == true ]] && curl -s -F "chat_id=$TELEGRAM_CHAT" -F "parse_mode=Markdown" -F "caption=* CxckKernel build passed!*
